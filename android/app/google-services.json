@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1019527118787",
+    "project_id": "axis-e72fd",
+    "storage_bucket": "axis-e72fd.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1019527118787:android:6374559e834c0e91b54776",
+        "android_client_info": {
+          "package_name": "com.example.axis_mobile"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1019527118787-tkdse346b05nd6iprgdppv61c90okfkl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCITwZuHRjHFYtaO5qIQElQjd99R2tsh_Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1019527118787-tkdse346b05nd6iprgdppv61c90okfkl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
