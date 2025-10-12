@@ -1,5 +1,6 @@
 import 'package:axis_mobile/constants/colors.dart';
 import 'package:axis_mobile/constants/sizes.dart';
+import 'package:axis_mobile/services/auth_service.dart';
 import 'package:axis_mobile/widgets/custom_button.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -67,6 +68,16 @@ class _UserRegistrationScreenState extends State<UserRegistrationScreen> {
 }
 
 class _LoginForm extends StatelessWidget {
+  final AuthService _authService = AuthService();
+
+  Future<void> _signInWithGoogle() async {
+    try {
+      await _authService.signInWithGoogle();
+    } catch (e) {
+      print(e);
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -74,7 +85,7 @@ class _LoginForm extends StatelessWidget {
         CustomButton(
           text: 'Googleでログイン',
           onPressed: () {
-            // ログイン処理
+            _signInWithGoogle();
           },
           leadingIcon: SvgPicture.asset('images/google-logo.svg', width: 16),
           borderColor: AppColors.whiteColor,
